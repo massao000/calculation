@@ -16,5 +16,12 @@
     結果表示のがわができた
    ~01:30~
     探し求めていたモジュールが見つかったcolorama
-   
+   ~02:20
 2020/12/18
+  19:40~
+    文字に色を付けた
+    ColorクラスEscapeクラスを作った
+    演算子を個々のデータ属性に分けたものをを作った(division_operator,multiplication_operator,subtraction_operator,addition_operator)
+    例外処理を作った(演算の入力のさい)
+    正答率を出した
+    
