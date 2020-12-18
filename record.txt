@@ -24,4 +24,7 @@
     演算子を個々のデータ属性に分けたものをを作った(division_operator,multiplication_operator,subtraction_operator,addition_operator)
     例外処理を作った(演算の入力のさい)
     正答率を出した
-    
+    モードすべて動くようになった
+      メモ
+        あとは色付けだったりファイル形式をどうするかだけ（変数名を変える）メニュー解説の内奥も変える　演算子を変数に置き換えてもいいかもしれない
+  ~03:00
