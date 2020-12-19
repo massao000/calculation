@@ -21,10 +21,28 @@
   19:40~
     文字に色を付けた
     ColorクラスEscapeクラスを作った
-    演算子を個々のデータ属性に分けたものをを作った(division_operator,multiplication_operator,subtraction_operator,addition_operator)
+    演算子を個々のメソッドに分けたものをを作った(division_operator,multiplication_operator,subtraction_operator,addition_operator)
     例外処理を作った(演算の入力のさい)
     正答率を出した
     モードすべて動くようになった
       メモ
         あとは色付けだったりファイル形式をどうするかだけ（変数名を変える）メニュー解説の内奥も変える　演算子を変数に置き換えてもいいかもしれない
   ~03:00
+2020/12/20
+  22:00~
+    日付を出すデータ属性を書いた
+    txtファイルとcsvファイルの書き込みメソッドができた
+    答えを出すのを一個のメソッドにした
+    フォントに色を付けた
+    文字が消えるを少しだけした
+    hardを使えるようにした
+    処理が違う難易度のメソッドに分けた
+    showメソッドの調整
+    その他調整
+    　メモ
+        easy,normal,hardメソッド１ずつできそう
+        デバック用の答えが出ないバージョンを作る
+        self.now_number_prodlem = (f'{self.number}問目') # operation_hardに持っていけるかも
+        self.1,n,hの変数名を変える
+  ~03:30
+  
