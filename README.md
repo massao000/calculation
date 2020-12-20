@@ -21,10 +21,11 @@
 
 ## デモ
 ### 終了時にｎを選択した場合
-![Desktop-2020 12 21-00 55 38 02_Trim](https://user-images.githubusercontent.com/69783019/102717830-30b73d00-4328-11eb-88fa-d2106e10725a.gif)
+![gif](https://user-images.githubusercontent.com/69783019/102720293-d5407b80-4336-11eb-9c3d-2926f58e8b72.gif)
 
 ### 終了時にｙを選択した場合
-![Desktop-2020 12 21-00 56 36 03_Trim](https://user-images.githubusercontent.com/69783019/102717833-33b22d80-4328-11eb-827c-44de539e4445.gif)
+![gif](https://user-images.githubusercontent.com/69783019/102720297-da9dc600-4336-11eb-8409-77994c8be920.gif)
+
 
 ## 起動メッセージ
 
