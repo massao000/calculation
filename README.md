@@ -197,59 +197,116 @@ gifを入れる
 * `calculation.py`
     * メインプログラム
 * `operator.py`
-    * OperatorClassを定義ファイル
-    
-* どっちかにするか両方か
+    * Writing、Operator、Animatio、IntError、を定義ファイル
+* `color.py`
+    * Color、Escape、を定義ファイル
+* 自動生成されるファイル
     * `data.csv`
-        * 結果などをまとめる
+        * 難易度、問題、タイム、正答率、が書かれる
     * `text.txt`
-        * 結果などをまとめる
+        * 日付、難易度、問題、問題数、タイム、正答率、が書かれる
 * `calculation.exe`
     * これだけで起動できるようにする
 
-## 実装予定クラス一覧
-* OperatorClass
-    * 演算子をつけるクラス(問題を作る)
-* EndTimeClass
-    * 問題開始時から終了までの時間の計測
-* WritingClass
-    * 結果などをまとめるクラス
-* intError
-    * 数値ではない物の例外処理
+## クラス一覧
+* Writing
+    * コマンドプロンプトに結果を表示させる
+* Operator
+    * ランダムで生成された数字で式を作る
+* IntError
+    * 例外処理
+* Animation
+    * 表示文字にアニメーションをつける
+* Color
+    * フォントカラー
+* Escape
+    * エスケープシーケンス
 ## クラス詳細
+### Writing
+* データ属性
+    * Escape
+        * 難易度
+    * issue
+        * 解答の問題
+    * problem
+        * 問題数
+    * time_attack
+        * タイム
+    * correct_answer_rate 
+        * 正答率
+    * fraction
+        * 解答できた問題数と問題数
+* メソッド
+    * show
+        * 結果を表示
 ### Operator
 * データ属性
-    * number_first
-        * ランダムの数値
-    * number_second
-        * ランダムの数値
-    * number_third
-        * ランダムの数値
-### EndTime
-* 未定
-    * 未定
-        * 未定
-### Writing
-* 未定
-    * 未定
-        * 未定
-### intError
+    * からのリスト
+        * 問題をまとめるリスト
+    * からのリスト
+        * csv用リスト
+* メソッド
+    * random_problem
+        * ランダムに数字を作成
+    * operation
+        * ランダムに作成された問題の演算を決める
+    * operation_hard
+        * ランダムに作成された問題の演算を決める
+    * end_time_show
+        * スタートから終了までの解答のタイムを記録
+    * text_file
+        * テキストファイルに書き込む
+    * csv_file
+        * csv用のテキストを書き込む
+    * division_operator
+        * 割り算をする
+    * multiplication_operator
+        * 掛け算をする
+    * subtraction_operator
+        * 引き算をする
+    * addition_operator
+        * 足し算をする
+    * division_operator_hard
+        * ランダム演算子と割り算をする
+    * multiplication_operator_hard
+        * ランダム演算子と掛け算をする
+    * subtraction_operator_hard
+        * ランダム演算子と引き算をする
+    * addition_operator_hard
+        * ランダム演算子と足し算をする
+    * answer_data
+        * 演算の正解か不正解かを表示
+### Animation
+* メソッド
+    * anim
+        * 配列を順番に表示させる
+    * start_loading
+        * スタートのカウントダウン
+    * end_loading
+        * 終了のカウントダウン
+### IntError
 数値じゃない例外クラス
 
+### Color
+* フォントカラーの設定一覧
+### Escape
+* エスケープシーケンス（カーソル移動などを設定）
+
 ## モジュール
-* time
 * os
 * random
+* time
+* csv
+* datetime
+* colorama
 
 ## 備考
-calculation.exeで新たに作成された`data.csv`or`text.txt`に以下を記入していく
-* モード
-* 実行した日付
-* 問題
-* 問題数
-* スタートから終わるまでのタイム
-* 正答率
-
-できれば演算子は問題ごとにランダムに変わる
-
-43 ÷ 56 = 0.7678571428 みたいな出た場合小数点第2(0.76)まで入力
+アプリケーションのある位置に新しくrecord_fileが生成され`data.csv`と`text.txt`が格納される
+|記入内容|`text.txt`|`data.csv`|
+|:---:|:---:|:---:|
+| 日付 | ○ | ✕ |
+|難易度| ○ | ○ |
+| 問題 | ○ | ○ |
+| 問題数 | ○ | ✕ |
+| タイム | ○ | ○ |
+| 正答率 | ○ | ○ |
