@@ -426,11 +426,11 @@ class Animation: # ここを改行できるようにする
         for i in range(3, -1, -1):
             print(f'\r開始まで {i}', end='')
             time.sleep(0.85)
-        print() # 入力されたら消してもいいかも
+        print()
 
     def end_loading(self):
             # print(f"実行されました")
         for i in range(5, -1, -1):
             print(f'\r終了まで {i}', end='')
             time.sleep(0.85)
-        print() # 入力されたら消してもいいかも
+        print()
