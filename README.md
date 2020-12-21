@@ -358,12 +358,12 @@
 * エスケープシーケンス（カーソル移動などを設定）
 
 ## モジュール
-* os
-* random
-* time
-* csv
-* datetime
-* colorama
+* [os](https://docs.python.org/ja/3/library/os.html)
+* [random](https://docs.python.org/ja/3/library/random.html?highlight=random#module-random)
+* [time](https://docs.python.org/ja/3/library/time.html?highlight=time#module-time)
+* [csv](https://docs.python.org/ja/3/library/csv.html?highlight=csv#module-csv)
+* [datetime](https://pypi.org/project/DateTime/)
+* [colorama](https://pypi.org/project/colorama/)
 
 ## 備考
 アプリケーションのある位置に新しくrecord_fileが生成され`data.csv`と`text.txt`が格納される
