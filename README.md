@@ -1,8 +1,9 @@
 # 企画
 
 ## アプリケーション概要
-
 計算力を鍛えるアプリケーションです。
+
+[calculation_Ver.2](https://github.com/massao000/calculation_Ver.2)このアプリのアップデートバージョンです。
 # 機能一覧
 
 * 1:イージーモード
@@ -366,6 +367,8 @@
 * [colorama](https://pypi.org/project/colorama/)
 
 ## 備考
+このアプリケーションは自由課題で5日以内に作成したものです。
+期間外に追加したことを新しいリポジトリに作成しました。▷([calculation_Ver.2](https://github.com/massao000/calculation_Ver.2))
 アプリケーションのある位置に新しくrecord_fileが生成され`data.csv`と`text.txt`が格納される
 |記入内容|`text.txt`|`data.csv`|
 |:---:|:---:|:---:|
